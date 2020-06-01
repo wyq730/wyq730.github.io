@@ -14,16 +14,18 @@ body {
 }
 
 a {
+    color: #27A822!important;  /* Override base style. */
     text-decoration: none;
     /*background-color: rgba(39, 168, 34, 0.06);*/
 }
 
 a:visited {
+    color: none;
     text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: #27A822;
+  text-decoration: underline;
 }
 
 p, address {
@@ -39,13 +41,20 @@ p, address {
     margin-bottom: 20px;
 }
 
-header > h1, section > h1 {
+header > h1, section > h1, #hi {
     color: #27A822;
 }
 
 header > h1 {
     line-height: 100%;
-    font-size: 250%;
+    font-size: 200%;
+    margin-bottom: 10px;
+}
+
+header > h2 {
+    color: #888888;
+    line-height: 100%;
+    font-size: 120%;
     margin-bottom: 20px;
 }
 
@@ -65,6 +74,10 @@ section > h1 {
     font-size: 140%;
     line-height: 120%;
     text-transform: uppercase;
+}
+
+#hi {
+  font-size: 140%;
 }
 
 article {
